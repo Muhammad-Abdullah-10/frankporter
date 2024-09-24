@@ -23,6 +23,8 @@ module.exports = {
 
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
+      '3xl': '1700px',
+      // => @media (min-width: 1700px) { ... }
     },
     extend: {
       textColor : {

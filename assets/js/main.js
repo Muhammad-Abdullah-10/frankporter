@@ -22,6 +22,9 @@ $(document).ready(function(){
           el: ".swiper-pagination",
           clickable: true,
         },
+        autoplay: {
+          delay: 3000,
+        },
       });
       
       var clientTestiHome = new Swiper(".clientTestiHome", {
@@ -31,6 +34,9 @@ $(document).ready(function(){
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+        autoplay: {
+          delay: 3000,
         },
         navigation: {
           nextEl: ".swiper-button-next",
@@ -42,7 +48,7 @@ $(document).ready(function(){
             
           },
           1350: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             
           },
          
