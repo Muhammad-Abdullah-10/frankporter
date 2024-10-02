@@ -359,3 +359,18 @@ div#swiper-wrapper-c3eea93fcc444ae4P .swiper-slide{
   width: 25px;
 }
 }
+
+
+/* form */
+.wrapper-form-dubai select{
+  padding:10px 20px ;
+  border-radius: 0;
+}
+.wrapper-form-dubai select option:hover{
+  background-color: #8d7252;
+}
+@media(max-width:1024px){
+  .wrapper-form-dubai select option{
+    max-width: 75% !important;
+  }
+}
