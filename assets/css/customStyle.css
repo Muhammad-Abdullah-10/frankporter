@@ -374,3 +374,20 @@ div#swiper-wrapper-c3eea93fcc444ae4P .swiper-slide{
     max-width: 75% !important;
   }
 }
+
+
+.wrapper-content-area {
+    border-left: 2px solid #8d7252;
+    border-bottom: 2px solid #8d7252;
+    border-right: 2px solid #8d7252;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.hidden{
+  display: none;
+}
+.rotate-45deg {
+  transform: rotate(90deg);
+  transition: 0.4s ease-in-out;
+}

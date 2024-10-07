@@ -56,6 +56,25 @@ $(document).ready(function(){
       });
       
   
-
+      $("#more-btn").click(function(){
+        $("#show-more").toggleClass("hidden");
+        if( !$("#show-more").hasClass("hidden")){
+          $("#more-btn").html(function(){
+            return $(this).html().replace("More" , "Less");
+          })
+          $("#more-btn i").addClass("rotate-45deg");
+        }
+        else{
+          $("#more-btn").html(function(){
+            return $(this).html().replace("Less" , "More");
+          })
+          $("#more-btn i").removeClass("rotate-45deg");
+        }
+        // $(this).toggleClass("hidden");
+      });
     
+      $(".faq-area-wrapper .question").click(function(){
+        $(this).closest(".faq-area-wrapper").find(".answer").toggleClass("hidden");
+        $(".answer").not($(this).closest(".faq-area-wrapper").find(".answer")).addClass("hidden");
+      })
   });

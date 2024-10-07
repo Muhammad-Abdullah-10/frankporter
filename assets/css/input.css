@@ -5,12 +5,13 @@
 
 @font-face {
     font-family: FuturaLight;
-    src: url('../fonts/FuturaCyrillicBook.woff') format("WOFF");
-    font-weight: 300;
+    /* src: url('../fonts/FuturaCyrillicBook.woff') format("WOFF"); */
+    src: url('../fonts/FuturaCyrillicLight.woff') format("WOFF");
+    font-weight: 400;
   }
   @font-face {
     font-family: FuturaNormal;
-    src: url('../fonts/FuturaCyrillicMedium.woff') format("WOFF");
+    src: url('../fonts/FuturaCyrillicBook.woff') format("WOFF");
     font-weight: 400;
   }
   @font-face {
