@@ -391,3 +391,9 @@ div#swiper-wrapper-c3eea93fcc444ae4P .swiper-slide{
   transform: rotate(90deg);
   transition: 0.4s ease-in-out;
 }
+.border-img-service{
+  border-bottom-left-radius: 2%;
+}
+.border-top-left-r-2{
+  border-top-left-radius: 2%;
+}
