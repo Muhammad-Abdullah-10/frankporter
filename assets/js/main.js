@@ -76,16 +76,24 @@ $(document).ready(function(){
       $(".faq-area-wrapper .question").click(function(){
         // $(this).closest(".faq-area-wrapper").find(".answer").toggleClass("hidden");
         // $(".").not($(this).closest(".faq-area-wrapper").find(".answer")).addClass("hidden");
+        const plus = $(this).find(".faq-icon .plus");
+        const minus = $(this).find(".faq-icon .minus");
         $(this).closest(".question").find(".answer").slideToggle();
         if(!$(this).closest(".question").find(".answer").hasClass("hidden")){
-            $(this).$(".faq-icon").html(`
-              <svg class="w-3 h-3 fill-current" viewBox="0 -192 469.33333 469" xmlns="http://www.w3.org/2000/svg"><path d="m437.332031.167969h-405.332031c-17.664062 0-32 14.335937-32 32v21.332031c0 17.664062 14.335938 32 32 32h405.332031c17.664063 0 32-14.335938 32-32v-21.332031c0-17.664063-14.335937-32-32-32zm0 0"/></svg>
-              `);
+          $(this).closest(".question").find(".answer").addClass("hidden")  
+            minus.addClass("hidden");
+            plus.removeClass("hidden")
+            // icon.html(`
+            //   <svg class="w-3 h-3 fill-current" viewBox="0 -192 469.33333 469" xmlns="http://www.w3.org/2000/svg"><path d="m437.332031.167969h-405.332031c-17.664062 0-32 14.335937-32 32v21.332031c0 17.664062 14.335938 32 32 32h405.332031c17.664063 0 32-14.335938 32-32v-21.332031c0-17.664063-14.335937-32-32-32zm0 0"/></svg>
+            //   `);
         }
         else{
-          $(".faq-icon").html(`
-             <svg class="toggle-icon w-3 h-3 fill-current" viewBox="0 -192 469.33333 469" xmlns="http://www.w3.org/2000/svg"><path d="m437.332031.167969h-405.332031c-17.664062 0-32 14.335937-32 32v21.332031c0 17.664062 14.335938 32 32 32h405.332031c17.664063 0 32-14.335938 32-32v-21.332031c0-17.664063-14.335937-32-32-32zm0 0"/></svg>
-            `);
+          $(this).closest(".question").find(".answer").removeClass("hidden")
+          minus.removeClass("hidden");
+          plus.addClass("hidden");
+          // icon.html(`
+          //    <svg class="toggle-icon w-3 h-3 fill-current" viewBox="0 -192 469.33333 469" xmlns="http://www.w3.org/2000/svg"><path d="m437.332031.167969h-405.332031c-17.664062 0-32 14.335937-32 32v21.332031c0 17.664062 14.335938 32 32 32h405.332031c17.664063 0 32-14.335938 32-32v-21.332031c0-17.664063-14.335937-32-32-32zm0 0"/></svg>
+          //   `);
         }
       })
       $(".faq-area-wrapper .question").click(function() {
