@@ -103,4 +103,26 @@ $(document).ready(function(){
         // Toggle the clicked FAQ answer
         // $(this).next(".answer").slideToggle();
       });
+
+      $(".QAwrapper").click(function(e){
+        // console.log(e.target);
+                
+        $hidden = $(e.target).closest(".QAwrapper").find(".faq-question-answer").hasClass("hidden");
+        $visible = $(e.target).closest(".QAwrapper").find(".faq-question-answer").hasClass("visible");
+        // $visible = $(".faq-question-answer").hasClass("visible");
+        // console.log($hidden);
+
+        if($hidden){
+          $(e.target).closest(".QAwrapper").find(".faq-question-answer").removeClass("hidden");
+          $(e.target).closest(".QAwrapper").find(".faq-question-answer").addClass("visible");
+          
+        }
+        if($visible){
+          $(e.target).closest(".QAwrapper").find(".faq-question-answer").removeClass("visible");
+          $(e.target).closest(".QAwrapper").find(".faq-question-answer").addClass("hidden");
+          console.log(e.target);
+        }
+
+      
+      });
   });
