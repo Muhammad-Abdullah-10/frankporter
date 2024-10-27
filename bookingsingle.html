@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
   <link rel="stylesheet" href="assets/css/aos.css">
-  <link href="./assets/css/style.css" rel="stylesheet">
-  <link href="./assets/css/customStyle.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/customStyle.css" rel="stylesheet">
   <!-- swiper -->
   <link
   rel="stylesheet"
@@ -17,8 +17,8 @@
 
 </head>
 <body>
-      <!-- header -->
-      <header class="header-wrapper flex flex-col bg-white lg:border-b-[#a7a7a7] lg:border-b-[1px] sm:px-0  lg:px-[40px] xl:px-[40px] lg:sticky">
+       <!-- header -->
+       <header class="header-wrapper flex flex-col bg-white lg:border-b-[#a7a7a7] lg:border-b-[1px] sm:px-0  lg:px-[40px] xl:px-[40px] lg:sticky">
         <!-- Top Bar -->
        <div class="wrapper-top-bar w-full flex flex-row justify-evenly sm:justify-between lg:pt-[20px] h-auto py-[10px] sm:bg-white bg-secondary">
          <div class="flex flex-row justify-evenly items-center">
@@ -50,9 +50,9 @@
         <!-- Top Bar -->
          <!-- Main Menu -->
        <div class="main-wrapper w-full flex flex-row justify-between items-center p-[10px] lg:py-[15px]">
-         <div class="logo-wrapper w-auto sm:w-1/5 lg:px-[20px]">
+         <a href="index.html" class="logo-wrapper w-auto sm:w-1/5 lg:px-[20px]">
            <img class="object-cover sm:w-100 xs:max-w-[180px] min-w-[180px] " src="assets/img/frankporter_logo_black.svg" alt="">
-         </div>
+         </a>
          <a href="#" class="lang-wrapper p-[2px] text-xs text-secondary border-[0.5px] rounded-[5px] text-center font-lato font-bold border-[#8d7252] block sm:hidden w-auto mr-[10px]">
            AR
          </a>
@@ -92,16 +92,16 @@
              <i class="fa fa-window-close" aria-hidden="true"></i>
            </a>
            </div>
-     
+      
          <div class="menu-wrapper flex flex-col justify-between items-start lg:w-auto py-[20px]  block lg:hidden ">
           <a class="w-[100%] py-[10px] pl-[20px] font-lato font-normal uppercase text-sm lg:text-xs xl:text-sm lg:px-2 xl:px-4" href="index.html">Overview</a>
           <a class="w-[100%] py-[10px] pl-[20px] font-lato font-normal uppercase text-sm lg:text-xs xl:text-sm lg:px-2 xl:px-4" href="booking_services.html">Services</a>
           <a class="w-[100%] py-[10px] pl-[20px] font-lato font-normal uppercase text-sm lg:text-xs xl:text-sm lg:px-2 xl:px-4" href="booking_dubai.html">Book Now</a>
           <a class="w-[100%] py-[10px] pl-[20px] font-lato font-normal uppercase text-sm lg:text-xs xl:text-sm lg:px-2 xl:px-4" href="gallery.html">Gallery</a>
           <a class="w-[100%] py-[10px] pl-[20px] font-lato font-normal uppercase text-sm lg:text-xs xl:text-sm lg:px-2 xl:px-4" href="service_single.html">Single Service</a>
-          <a class="w-[100%] py-[10px] pl-[20px] font-lato font-normal uppercase text-sm lg:text-xs xl:text-sm lg:px-2 xl:px-4" href="#">About Us</a>
-          <a class="w-[100%] py-[10px] pl-[20px] font-lato font-normal uppercase text-sm lg:text-xs xl:text-sm lg:px-2 xl:px-4" href="#">Estimate Revenue</a>
-          <a class="w-[100%] py-[10px] pl-[20px] font-lato font-normal uppercase text-sm lg:text-xs xl:text-sm lg:px-2 xl:px-4" href="booking_contact.html">Contact</a>
+          <a class="w-[100%] py-[10px] pl-[20px] font-lato font-normal uppercase text-sm lg:text-xs xl:text-sm lg:px-2 xl:px-4" href="about-us.html">About Us</a>
+          <a class="w-[100%] py-[10px] pl-[20px] font-lato font-normal uppercase text-sm lg:text-xs xl:text-sm lg:px-2 xl:px-4" href="estimate.html">Estimate Revenue</a>
+          <a class="w-[100%] py-[10px] pl-[20px] font-lato font-normal uppercase text-sm lg:text-xs xl:text-sm lg:px-2 xl:px-4" href="contact-main.html">Contact</a>
          </div>
          <div class="flex flex-row justify-start items-center w-[100%] pl-[20px] my-[10px]">
            <a href="#" class="bg-blackButton min-w-[200px] max-w-[250px] h-auto font-lato text-white font-bold text-[12px] py-[10px] rounded-[5px]
@@ -119,36 +119,93 @@
          
        </div>
         <!-- Mobile Menu -->
-     </header>
-     <!-- header -->
+      </header>
+      <!-- header -->
+    
+      <div class="w-full bg-[#f3f3f3] h-auto flex flex-col lg:flex-row lg:mx-auto">
+        <div class="w-full py-[20px] lg:w-[60%] lg:py-[5%] lg:pl-[3%]">
+            <form class="flex flex-col md:flex-col w-full md:w-[100%]">
+                <div class="flex flex-col md:flex-row w-[90%] mx-auto lg:mx-0 lg:w-[75%]">
+                    <input type="text" name="fname" placeholder="First Name" class="w-full border-gray-500 border-[1px] border-solid py-[10px] px-[10px] font-futuraNormal font-[600] text-[20px] rounded focus:outline-none focus:border-[#8d7252] my-[10px] md:mx-[5px] lg:mx-[10px]"/>
+                    <input type="text" name="lname" placeholder="Last Name" class="w-full border-gray-500 border-[1px] border-solid py-[10px] px-[10px] font-futuraNormal font-[600] text-[20px] rounded focus:outline-none focus:border-[#8d7252] my-[10px] md:mx-[5px] lg:mx-[10px]"/>
+                </div>
+                <div class="flex flex-col md:flex-row w-[90%] mx-auto lg:mx-0 lg:w-[75%]">
+                    <input type="email" name="email" placeholder="Email" class="w-full border-gray-500 border-[1px] border-solid py-[10px] px-[10px] font-futuraNormal font-[600] text-[20px] rounded focus:outline-none focus:border-[#8d7252] my-[10px] md:mx-[5px] lg:mx-[10px] "/>
+                    <input type="tel" name="number" placeholder="Phone Number" class="w-full border-gray-500 border-[1px] border-solid py-[10px] px-[10px] font-futuraNormal font-[600] text-[20px] rounded focus:outline-none focus:border-[#8d7252] my-[10px] md:mx-[5px] lg:mx-[10px]"/>
+                </div>
+                <div class="flex flex-row w-[90%] mx-auto lg:mx-0 lg:w-[75%]">
+                    <textarea type="email" name="email" placeholder="Tell us more about your property"  class="h-[70%] w-full  border-gray-500 border-[1px] border-solid py-[10px] px-[10px] font-futuraNormal font-[600] text-[20px] rounded focus:outline-none focus:border-[#8d7252] my-[10px] md:mx-[5px] lg:mx-[10px] "></textarea>
+                </div>
+                <div class="flex flex-col sm:flex-row w-[90%] mx-auto lg:mx-0 lg:w-[60%]">
+                    <input type="text" name="promo" placeholder="Promo Code"  class="h-[60%] w-full border-gray-500 border-[1px] border-solid py-[10px] px-[10px] font-futuraNormal font-[600] text-[20px] rounded focus:outline-none focus:border-[#8d7252] my-[10px] md:mx-[5px] lg:mx-[10px]"/>
+                    <button class="my-[10px] w-full md:w-[75%] self-start bg-transparent text-secondary font-futuraNormal tracking-[1.5px] font-[600] text-[16px]  uppercase py-[10px] lg:py-[12px] lg:mx-[10px] rounded border-[1px] border-[#8d7252] border-solid" type="submit">Apply Promo Code</button>
+                </div>
+                <div class="flex flex-col  w-[90%] mx-auto lg:mx-0 lg:w-[75%]">
+                    <div class="flex flex-row lg:mx-[10px] my-[10px] lg:my-[25px] font-futuraLight font-[600]">
+                        Billing Details
+                    </div>
+                    <div class="flex flex-row lg:mx-[10px]">
+                        <input class="bg-gray-500" type="checkbox" id="demoCheckbox" name="checkbox" value="1">
+                        <label class="ml-[15px] font-futuraLight text-[14px] font-[600] tracking-[1px]" for="demoCheckbox"> I have read and accept the Privacy Policy</label>
+                    </div>
+                    <div class="flex flex-row lg:mx-[10px]">
+                        <input class="bg-gray-500" type="checkbox" id="demoCheckbox" name="checkbox" value="1">
+                        <label class="ml-[15px] font-futuraLight text-[14px] font-[600] tracking-[1px]" for="demoCheckbox"> I am interested in receiving discounts, promotions and news about Frank Porter</label>
+                    </div>
+                    <div class="flex flex-row lg:mx-[10px]">
+                        <input class="bg-gray-500" type="checkbox" id="demoCheckbox" name="checkbox" value="1">
+                        <label class="ml-[15px] font-futuraLight text-[14px] font-[600] tracking-[1px]" for="demoCheckbox"> I understand and accept all the terms and conditions</label>
+                    </div>
+                </div>
+                <div class="flex flex-col w-[90%] mx-auto lg:mx-0 lg:w-[75%]">
+                    <button class="self-center my-[15px] lg:mt-[20px] w-[80%] md:w-[50%] xl:w-[25%] md:self-start bg-secondary text-white font-futuraNormal tracking-[1.5px] font-[600] text-[16px]  uppercase py-[10px] lg:py-[12px] mx-[10px] rounded border-[1px] border-[#8d7252] border-solid" type="submit">Book Now</button>
+                </div>
+            </form>
+        </div>
+        <div class="w-full lg:w-[40%] bg-white flex flex-col">
+            <img src="assets/img/background-frank-porter-services.98613094.jpg" alt="" class="object-cover lg:h-[300px]">
+            <div class="flex flex-col px-[5%] pt-[25px] lg:pt-[3%] pb-[25px] lg:pb-[3%] max-w-[90%] mx-auto">
+                <h3 class="font-futuraLight text-[18px] lg:text-[24px] font-[600] uppercase text-secondary tracking-[1.5px]">
+                    Contemporary 3BR Maid's Room Villa w Backyard!
+                </h3>
+                <h4 class="font-futuraLight text-[18px] py-[5px] text-gray-500 font-[600]">
+                    DXB,Pordal,Greater Dubai,Villas,STAR,TOP_STAR, Dubai UAE
+                </h4>
+                <p class="font-futuraLight text-[18px] text-gray-500 font-[600]">
+                    1 guest
+                </p>
+                <p class="font-futuraLight text-[18px] text-gray-500 font-[600]">
+                    3 nights
+                </p>
+                <p class="font-futuraNormal text-[18px] text-secondary font-[400]">
+                    Check in: 2024-11-03
+                </p>
+                <p class="font-futuraNormal text-[18px] text-secondary font-[400]">
+                    Check out: 2024-11-06
+                </p>
+                <hr class="w-full h-[2px] my-[20px] bg-secondary">
+                <div class="flex flex-row justify-between">
+                    <div class="text-center md:text-left w-[40%] lg:w-[30%] font-futuraLight text-[20px] text-gray-500 font-[600]">3 nights</div>
+                    <div class="text-center md:text-right w-[40%] lg:w-[30%] font-futuraLight text-[20px] text-gray-500 font-[600]">3 400.00 د.إ</div>
+                </div>
+                <div class="flex flex-row justify-between">
+                    <div class="text-center md:text-left w-[40%] lg:w-[30%] font-futuraLight text-[20px] text-gray-500 font-[600]">Cleaning fee</div>
+                    <div class="text-center md:text-right w-[40%] lg:w-[30%] font-futuraLight text-[20px] text-gray-500 font-[600]">580.00 د.إ</div>
+                </div>
+                <div class="flex flex-row justify-between">
+                    <div class="text-center md:text-left w-[40%] lg:w-[30%] font-futuraLight text-[20px] text-gray-500 font-[600]">Tourism tax</div>
+                    <div class="text-center md:text-right w-[40%] lg:w-[30%] font-futuraLight text-[20px] text-gray-500 font-[600]">90.00 د.إ</div>
+                </div>
+                <div class="flex flex-row justify-between">
+                    <div class="text-center md:text-left w-[40%] lg:w-[30%] font-futuraLight text-[20px] text-[#000] font-[600]">Total</div>
+                    <div class="text-center md:text-right w-[40%] lg:w-[30%] font-futuraLight text-[20px] text-[#000] font-[600]">4070.00 د.إ</div>
+                </div>
+            </div>
+        </div>
+      </div>
 
- <div class="w-full h-auto mb-[25px] xl:mb-[50px] xl:h-auto">
-    <img class="object-cover" src="assets/img/background-frank-porter-services.98613094.jpg" alt="">
- </div>
-
- <form class="flex flex-col justify-center my-[20px] md:max-w-[650px] mx-auto px-4 space-y-6 font-[sans-serif] text-[#333] md:my-[50px]">
-    <div class="flex flex-col md:flex-row justify-between">
-        <input type="text" placeholder="Name"
-        class="mx-[10px] px-4 py-[10px] font-futuraNormal  text-[18px] placeholder:font-bold rounded-md placeholder:text-[#3333338f] bg-white border border-gray-400  my-[10px] md:w-[90%] outline-[#8d7252]" />
-        <input type="email" placeholder="Email"
-        class="mx-[10px] px-4 py-[10px] font-futuraNormal  text-[18px] placeholder:font-bold text-[#000] rounded-md bg-white border placeholder:text-[#3333338f] border-gray-400  my-[10px] md:w-[90%] outline-[#8d7252]" />
-    </div>
-    <div class="flex flex-row justify-between">
-        <input type="text" placeholder="Subject"
-        class="mx-[10px] px-4 py-[10px] font-futuraNormal  text-[18px] placeholder:font-bold rounded-md placeholder:text-[#3333338f] bg-white border border-gray-400 w-full outline-[#8d7252]" />
-    </div>
-    <div class="flex flex-row justify-center">
-        <textarea placeholder="Your message" cols="42" rows="5"
-        class="px-4 py-[10px] font-futuraNormal  text-[18px] placeholder:font-bold rounded-md placeholder:text-[#3333338f] bg-white border border-gray-400 w-[95%] mx-0 md:w-[98%] md:mx-auto outline-[#8d7252]"></textarea> 
-    </div>
-    <div class="flex flex-row justify-end w-full">
-        <button class="bg-secondary text-white font-futuraNormal font-[500] text-[16px] uppercase px-[40vw] md:px-[30px] py-[10px] rounded" type="submit" >Send</button>   
-    </div>
-</form>
-
-
-
- <footer class="footer-wrapper flex flex-col lg:flex-row px-[5%] pt-[5%] pb-[3%] bg-blackButton">
+      
+<footer class="footer-wrapper flex flex-col lg:flex-row px-[5%] pt-[5%] pb-[3%] bg-blackButton">
     <div class="footer-col-1 w-full lg:w-[40%] 2xl:max-w-[80%] 2xl:mx-auto flex flex-col px-[20px] lg:px-[10px]">
       <img src="assets/img/logo_FP-white-ex_px35.svg" alt="" class="object-cover w-full  2xl:max-w-[70%] mb-[20px]">
       <p class="font-futuraLight text-[16px] xl:text-[20px] text-wrap text-white leading-[1.1] 2xl:max-w-[75%]">
